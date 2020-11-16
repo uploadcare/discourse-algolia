@@ -160,7 +160,7 @@ module DiscourseAlgolia
       if GlobalSetting.relative_url_root.present?
         return "#{GlobalSetting.relative_url_root}#{url_}"
       end
-      return url_
+      url_
     end
 
     def self.add_algolia_record(index_name, record, object_id)
